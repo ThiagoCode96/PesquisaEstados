@@ -1,0 +1,22 @@
+﻿<Window x:Class="PesquisaEstados.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PesquisaEstados"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="DGVLista" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,110,0,10" IsReadOnly="True" HorizontalAlignment="Center" MinColumnWidth="50" VerticalAlignment="Top"/>
+        <Button x:Name="PesquisarBtn" Content="Pesquisar" HorizontalAlignment="Left" Margin="526,68,0,0" VerticalAlignment="Top" Height="25" Width="100" FontSize="20" FontFamily="Bahnschrift Condensed" Click="Search_Click"/>
+        <TextBox x:Name="cidadeBox" HorizontalAlignment="Left" Margin="170,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="25" TextChanged="TextBox_TextChanged" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="estadoBox" HorizontalAlignment="Left" Margin="276,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="25" TextChanged="TextBox_TextChanged" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="siglaBox" HorizontalAlignment="Left" Margin="380,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Height="25" TextChanged="TextBox_TextChanged" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLines="1" MaxLength="2"/>
+        <TextBox x:Name="dddBox" HorizontalAlignment="Left" Margin="453,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Height="25" TextChanged="TextBox_TextChanged" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLines="1" MaxLength="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="202,47,0,0" TextWrapping="Wrap" Text="Cidade" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="15"/>
+        <TextBlock HorizontalAlignment="Left" Margin="300,47,0,0" TextWrapping="Wrap" Text="Estado" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="15"/>
+        <TextBlock HorizontalAlignment="Left" Margin="391,47,0,0" TextWrapping="Wrap" Text="Sigla" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="15"/>
+        <TextBlock HorizontalAlignment="Left" Margin="463,47,0,0" TextWrapping="Wrap" Text="DDD" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="15"/>
+
+    </Grid>
+</Window>
